@@ -1,0 +1,12 @@
+{
+  "name": "hdb-cf-auth-azuread",
+  "version": "1.0.1",
+  "description": "Azure AD auth for HarperDB Custom Functions",
+  "author": "kevin@harperdb.io",
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": ["harperdb","azure","active directory"],
+  "dependencies": {
+    "@azure/msal-node": "^1.3.2"
+  }
+}
