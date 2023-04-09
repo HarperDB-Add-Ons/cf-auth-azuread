@@ -9,9 +9,10 @@ This adds the ability to secure database access with an Azure Active Directory a
 4. Add the validate function to the prevalidation handler for endpoints that should use AAD Authentication.
 
 ## Environment Variables
-AAD_CLIENT_ID="the client id for the AAD app"
-AAD_AUTH_URL="the authority url for the AAD app"
-AAD_CLIENT_SECRET="the client secret for the AAD app"
+- AAD_CLIENT_ID="the client id for the AAD app"
+- AAD_AUTH_URL="the authority url for the AAD app"
+- AAD_CLIENT_SECRET="the client secret for the AAD app"
+- AAD_REDIRECT_URI="the URL to redirect after a successful validation"
 
 ## Example Route and POST
 ### Route Definition
