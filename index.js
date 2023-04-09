@@ -46,7 +46,7 @@ async function validate(request, response, next, hdbCore, logger) {
 
   /* POPULATE USER ROLES IN REQUEST BODY */
   request.body.hdb_user = { role: { permission: {} } }
-  results[0].roles.forEach((role) => {
+  roles[0].forEach((role) => {
     const [schema, table, operation] = role.split('.')
     if (!request.body.hdb_user.role.permission[schema]) {
       request.body.hdb_user.role.permission[schema] = { tables: {} }
