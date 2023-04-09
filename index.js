@@ -8,6 +8,8 @@ const MSAL_CONFIG = {
   },
 }
 
+const REDIRECT_URI = process.env.AAD_REDIRECT_URI
+
 const PERMISSION_MAP = {
   read: 'read',
   write: 'insert',
